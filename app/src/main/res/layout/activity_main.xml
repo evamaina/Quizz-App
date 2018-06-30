@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score"
+        android:textSize="30sp"
+        android:layout_alignParentLeft ="true"
+        android:id="@+id/score_text"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:layout_alignParentRight ="true"
+        android:id="@+id/score"
+        android:textColor="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/question_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="1.What is the capital city of Kenya?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/score_text"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_1"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/city_choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nairobi"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/city_choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mombasa"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/city_choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kisumu"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/city_choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nanyuki"
+            android:checked="false"/>
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/question_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="2.Which is your favourite animal?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/radio_group1"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_2"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/animal_choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lion"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/animal_choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/animal_choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elephant"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/animal_choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiger"
+            android:checked="false"/>
+
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/question_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="3.Which of the following is not a programming language?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/radio_group2"
+        />
+    <RadioGroup
+        android:id="@+id/radio_group3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_3"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/language_choice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Java"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/language_choice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Html"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/language_choice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Python"
+            android:checked="false"/>
+
+        <RadioButton
+            android:id="@+id/language_choice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JavaScript"
+            android:checked="false"/>
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:id="@+id/btnSubmit"
+        android:layout_below="@+id/cb4"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/question_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio_group3"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="3.Which of these countries are in Africa?"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_4"
+        android:text="Egypt"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb1"
+        android:text="Brazil"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb2"
+        android:text="Malawi"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb3"
+        android:text="Palestine"
+        android:checked="false"/>
+
+
+</RelativeLayout>
+</ScrollView>
