@@ -44,14 +44,9 @@ The goal is to create an educational app that quizzes a user about a certain top
 
 [Google-Drive Link](https://drive.google.com/open?id=1XsUD6UY3dUN7rVFw80ouFTVjhpoK5Q5c)
 
+
 ### Screenshots
-![alt text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/screen1.png "Screenshot 1")
-
-![alt text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/screen2.png "Screenshot 2")
-
-![alt text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/screen3.png "Screenshot 3")
-
-
+![alt text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/screen1.png "Screenshot 1")    ![alt text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/screen2.png "Screenshot 2")          ![alt text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/screen3.png "Screenshot 3")
 
 
 
