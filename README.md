@@ -50,3 +50,8 @@ The goal is to create an educational app that quizzes a user about a certain top
 
 
 
+
+![Alt Text](https://github.com/evamaina/Quizz-App/blob/master/app/src/main/res/drawable/quizz-app.gif)
+
+
+
