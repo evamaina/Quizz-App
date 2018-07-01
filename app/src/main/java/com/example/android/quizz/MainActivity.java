@@ -1,5 +1,6 @@
 package com.example.android.quizz;
 
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -8,13 +9,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     // These are the global variables
     int score = 0;
-    //Declare the answers for  for the edit text options
+    //Declare the answers for the edit text options
     String q8 = "Kenyatta";
     String q9 = "Nairobi";
     String q10 = "Two";
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
         // layout instances
         buttonSubmit = (Button) findViewById(R.id.btnSubmit);
 
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+
 
                 if (((RadioButton)findViewById(R.id.binary)).isChecked()) {score++;}
                 if (((RadioButton)findViewById(R.id.big_o_notation)).isChecked()) {score++;}
@@ -61,9 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
                 if (questionEightAnswer.equalsIgnoreCase(q8)) {
                     score++;
+
                 }
                 if (questionNineAnswer.equalsIgnoreCase(q9)) {
                     score++;
+
                 }
                 if (questionTenAnswer.equalsIgnoreCase(q10)) {
                     score++;
@@ -74,16 +79,18 @@ public class MainActivity extends AppCompatActivity {
 
         });}
     private void displayResult(int score) {
+
         String message = "You scored " + score;
         message += " out of 10";
-        message += "\nWell done!";
         Toast toast = Toast.makeText(this, message, Toast.LENGTH_SHORT);
         toast.setGravity(Gravity.CENTER, 0 , 0);
         toast.show();
     }
 
 
-    }
+}
+
+
 
 
 
