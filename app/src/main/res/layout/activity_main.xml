@@ -37,8 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:inputType="text"
-        android:text="1.What is the capital city of Kenya?"
+        android:text="1.In which format is data stored in a computer?"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@id/score_text"
@@ -54,31 +53,31 @@
         android:layout_marginTop="10dp">
 
         <RadioButton
-            android:id="@+id/city_choice1"
+            android:id="@+id/hard_disk"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nairobi"
+            android:text="Hard disk"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/city_choice2"
+            android:id="@+id/binary"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mombasa"
+            android:text="Binary"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/city_choice3"
+            android:id="@+id/decimal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kisumu"
+            android:text="Decimal"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/city_choice4"
+            android:id="@+id/electricity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nanyuki"
+            android:text="Electricity"
             android:checked="false"/>
 
 
@@ -89,8 +88,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:inputType="text"
-        android:text="2.Which is your favourite animal?"
+        android:text="2.What is the metric for analyzing the worst-case
+         scenario of algorithms in terms of scalability and efficiency called?"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@id/radio_group1"
@@ -105,31 +104,31 @@
         android:layout_marginTop="10dp">
 
         <RadioButton
-            android:id="@+id/animal_choice1"
+            android:id="@+id/paralleism"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Lion"
+            android:text="Parallelism"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/animal_choice2"
+            android:id="@+id/big_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cat"
+            android:text="Big Data"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/animal_choice3"
+            android:id="@+id/recursion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Elephant"
+            android:text="Recursion"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/animal_choice4"
+            android:id="@+id/big_o_notation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tiger"
+            android:text="Big O Notation"
             android:checked="false"/>
 
 
@@ -155,28 +154,28 @@
         android:layout_marginTop="10dp">
 
         <RadioButton
-            android:id="@+id/language_choice1"
+            android:id="@+id/java"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Java"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/language_choice2"
+            android:id="@+id/html"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Html"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/language_choice3"
+            android:id="@+id/python"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Python"
             android:checked="false"/>
 
         <RadioButton
-            android:id="@+id/language_choice4"
+            android:id="@+id/javascript"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="JavaScript"
@@ -185,31 +184,98 @@
 
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/question_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="4.Which of the following is the udacity logo??"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@id/radio_group3"
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question_4">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/udemy" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/image2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/udacity" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="false" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/udd" />
+        </LinearLayout>
+    </RadioGroup>
+
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SUBMIT"
         android:id="@+id/btnSubmit"
-        android:layout_below="@+id/cb4"
+        android:layout_below="@+id/city"
         android:layout_marginTop="10dp"
         />
 
     <TextView
-        android:id="@+id/question_4"
+        android:id="@+id/question_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/radio_group3"
-        android:layout_marginTop="8dp"
-        android:inputType="text"
-        android:text="3.Which of these countries are in Africa?"
+        android:layout_below="@id/radio_group4"
+        android:layout_marginTop="10dp"
+        android:text="5.Which of these countries are in Africa?"
         android:textSize="20sp"
         android:textStyle="bold"/>
     <CheckBox
         android:id="@+id/cb1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/question_4"
+        android:layout_below="@id/question_5"
         android:text="Egypt"
         android:checked="false"/>
     <CheckBox
@@ -233,6 +299,141 @@
         android:layout_below="@id/cb3"
         android:text="Palestine"
         android:checked="false"/>
+
+    <TextView
+        android:id="@+id/question_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb4"
+        android:layout_marginTop="8dp"
+        android:text="6.Which of the following are sorting algorithms?"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/mergesort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_6"
+        android:text="Merge sort"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/quicksort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mergesort"
+        android:text="Quicksort"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/binarysort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quicksort"
+        android:text="Binary sort"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/bubblesort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/binarysort"
+        android:text="Bubble sort"
+        android:checked="false"/>
+
+    <TextView
+        android:id="@+id/question_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bubblesort"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="7.Which of the following is NOT a type of data structure?"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <CheckBox
+        android:id="@+id/queue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_7"
+        android:text="Queue"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/Char"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/queue"
+        android:text="Char"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Char"
+        android:text="Graph"
+        android:checked="false"/>
+    <CheckBox
+        android:id="@+id/integer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/graph"
+        android:text="Integer"
+        android:checked="false"/>
+    <EditText
+        android:id="@+id/president"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/integer"
+        android:layout_marginTop="25dp"
+        android:text="8.Who is the first president of Kenya?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/counties"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/president"
+        android:text="9.How many counties do we have in Kenya?:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_marginTop="25dp" />
+    <!--<LinearLayout-->
+        <!--android:id="@+id/edit_image"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_below="@+id/counties">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textStyle="bold"-->
+            <!--android:text="10.Which company does this logo represent"-->
+            <!--android:textSize="20sp"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/image4"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="80dp"-->
+            <!--android:src="@drawable/udacity"-->
+           <!--/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/question_10"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/counties"
+        android:text="10.What is the capital city of kenya?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:layout_marginTop="25dp" />
+
 
 
 </RelativeLayout>
