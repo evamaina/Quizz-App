@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:text="2.What is the metric for analyzing the worst-case
-         scenario of algorithms in terms of scalability and efficiency called?"
+        scenario of algorithms in terms of scalability and efficiency called?"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_below="@id/radio_group1"
@@ -254,11 +254,11 @@
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="SUBMIT"
         android:id="@+id/btnSubmit"
-        android:layout_below="@+id/city"
+        android:layout_below="@+id/question_10"
         android:layout_marginTop="10dp"
         />
 
@@ -272,31 +272,31 @@
         android:textSize="20sp"
         android:textStyle="bold"/>
     <CheckBox
-        android:id="@+id/cb1"
+        android:id="@+id/egypt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/question_5"
         android:text="Egypt"
         android:checked="false"/>
     <CheckBox
-        android:id="@+id/cb2"
+        android:id="@+id/brazil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb1"
+        android:layout_below="@id/egypt"
         android:text="Brazil"
         android:checked="false"/>
     <CheckBox
-        android:id="@+id/cb3"
+        android:id="@+id/malawi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb2"
+        android:layout_below="@id/brazil"
         android:text="Malawi"
         android:checked="false"/>
     <CheckBox
-        android:id="@+id/cb4"
+        android:id="@+id/palestine"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb3"
+        android:layout_below="@id/malawi"
         android:text="Palestine"
         android:checked="false"/>
 
@@ -304,7 +304,7 @@
         android:id="@+id/question_6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/cb4"
+        android:layout_below="@id/palestine"
         android:layout_marginTop="8dp"
         android:text="6.Which of the following are sorting algorithms?"
         android:textSize="20sp"
@@ -377,64 +377,36 @@
         android:text="Integer"
         android:checked="false"/>
     <EditText
-        android:id="@+id/president"
+        android:id="@+id/question_8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/integer"
         android:layout_marginTop="25dp"
-        android:text="8.Who is the first president of Kenya?"
+        android:hint="8.Who is the first president of Kenya?"
         android:textSize="20sp"
         android:textStyle="bold"
         android:inputType="text"/>
     <EditText
-        android:id="@+id/counties"
+        android:id="@+id/question_9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/president"
-        android:text="9.How many counties do we have in Kenya?:"
+        android:layout_below="@id/question_8"
+        android:hint="9.Which is the capital city of Kenya?:"
         android:textSize="20sp"
         android:textStyle="bold"
         android:inputType="text"
         android:layout_marginTop="25dp" />
-    <!--<LinearLayout-->
-        <!--android:id="@+id/edit_image"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:layout_below="@+id/counties">-->
 
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:textStyle="bold"-->
-            <!--android:text="10.Which company does this logo represent"-->
-            <!--android:textSize="20sp"/>-->
-
-        <!--<ImageView-->
-            <!--android:id="@+id/image4"-->
-            <!--android:layout_width="80dp"-->
-            <!--android:layout_height="80dp"-->
-            <!--android:src="@drawable/udacity"-->
-           <!--/>-->
-
-        <!--<EditText-->
-            <!--android:id="@+id/question_10"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--/>-->
-    <!--</LinearLayout>-->
     <EditText
-        android:id="@+id/city"
+        android:id="@+id/question_10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/counties"
-        android:text="10.What is the capital city of kenya?"
+        android:layout_below="@id/question_9"
+        android:hint="10.How many tags are in a regular element?"
         android:textSize="20sp"
         android:textStyle="bold"
         android:inputType="text"
         android:layout_marginTop="25dp" />
-
-
 
 </RelativeLayout>
 </ScrollView>
